@@ -1,0 +1,72 @@
+.main__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__top {
+    background-color: #eeeeee;
+    padding: 16px 0;
+}
+.main__item {
+    display: flex;
+    gap: 30px;
+}
+.main__link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: var(--gray-strong);
+    }
+}
+.main__items {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.main__linkk {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    &:hover {
+        color: var(--gray-strong);
+    }
+}
+.main__dowland {
+    display: flex;
+    gap: 4px;
+}
+.main__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: var(--blue);
+}
+.main__icons {
+    background-image: url("../../../../assets/img/header-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.main__icons:nth-child(2) {
+    background-image: url("../../../../assets/img/heart-line.png");
+}
+
+.main__icons:nth-child(3) {
+    background-image: url("../../../../assets/img/shopping-cart.png");
+}
+
+.main__itemss {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

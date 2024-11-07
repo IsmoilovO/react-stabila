@@ -1,0 +1,132 @@
+.hero {
+    padding-top: 32px;
+    position: relative;
+    background-image: url(../../assets/img/hero-fon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 48px;
+
+    color: var(--black);
+    margin-bottom: 24px;
+}
+
+.hero__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+
+    color: var(--gray-strong);
+    margin-bottom: 33px;
+}
+.hero__content {
+    text-align: center;
+}
+
+.hero__btn {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--white);
+    padding: 16px 70px;
+    max-width: max-content;
+    background-color: var(--blue);
+    border-radius: 3px;
+}
+
+.hero__btn2 {
+    display: flex;
+    gap: 15px;
+
+    &::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        display: inline-block;
+        background-image: url("../../assets/img/arrow-left-s-fill.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--blue);
+        border-radius: 3px;
+    }
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        display: inline-block;
+        background-image: url("../../assets/img/arrow-right.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--blue);
+        border-radius: 3px;
+    }
+}
+
+.hero__btn_block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 100%;
+    bottom: -80px;
+}
+
+.hero__imgee {
+    display: none;
+}
+.hero__btn_blocks {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .hero {
+        background-image: url("../../assets/img/hero-desktop.svg");
+    }
+    .hero__imgee {
+        display: block;
+    }
+    .hero__btn_blocks {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hero__imge {
+        display: none;
+    }
+    .hero__btn_block {
+        display: none;
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__imgee {
+        width: 500px;
+        margin-left: auto;
+    }
+    .hero__content {
+        width: 325px;
+        text-align: start;
+    }
+    .hero__block {
+        display: flex;
+        align-items: center;
+    }
+    .hero__title {
+        font-weight: 900;
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+    .hero__text {
+        font-size: 18px;
+        margin-bottom: 51px;
+    }
+}

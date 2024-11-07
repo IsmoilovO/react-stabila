@@ -1,0 +1,99 @@
+.stabil {
+    background-color: #1074eb;
+    padding-top: 179px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.stabil__block {
+}
+
+.stabil__content {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.stabil__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 45px;
+}
+
+.stabil__line {
+    width: 100px;
+    height: 1px;
+    background-color: var(--white);
+    display: inline-block;
+    margin-bottom: 33px;
+}
+
+.stabil__btn {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--blue);
+    padding: 16px;
+    border-radius: 3px;
+    background-color: var(--white);
+    max-width: max-content;
+}
+
+.stabil__image {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.stabil__picturee {
+    position: absolute;
+    right: 0;
+    bottom: -82px;
+}
+
+.stabil__images {
+    display: none;
+}
+
+.stabil__picturees {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .stabil {
+        padding: 50px 0;
+    }
+    .stabil__block {
+        background-image: url("../../../assets/img/stabi-bacroun.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .stabil__picturees {
+        display: block;
+    }
+
+    .stabil__images {
+        display: block;
+    }
+
+    .stabil__image {
+        display: none;
+    }
+    .stabil__picturee {
+        display: none;
+    }
+
+    .stabil__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .stabil__content {
+        width: 327px;
+    }
+    .stabil__btn {
+        padding: 18px 61px;
+    }
+}

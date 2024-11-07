@@ -1,0 +1,90 @@
+.main__bottom_lsit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eeeeee;
+}
+.main__bottom_btn {
+    padding: 15px;
+    background-color: #1074eb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--white);
+    border-radius: 3px;
+
+    &::before {
+        content: "";
+        width: 19px;
+        height: 17px;
+        display: inline-block;
+        background-image: url("../img/header-button.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+.main__bottom__link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--black);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    &:hover {
+        color: var(--gray-strong);
+    }
+}
+
+.main__bottom__linkk {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    background: linear-gradient(90deg, #383838 0%, rgba(56, 56, 56, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &::after {
+        content: "";
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url("../../../assets/img/arrow.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
+.main__bottom_btn {
+    padding: 15px;
+    background-color: #1074eb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--white);
+    border-radius: 3px;
+
+    &::before {
+        content: "";
+        width: 19px;
+        height: 17px;
+        display: inline-block;
+        background-image: url("../../../assets/img/header-button.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.main__botoom {
+    padding-top: 22px;
+}
